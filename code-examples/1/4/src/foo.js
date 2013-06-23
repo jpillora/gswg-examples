@@ -1,6 +1,6 @@
-var foo = 42;
+var foo = 1, bar = 3;
 
-for(var i = 0; i != 10; i++)
-  foo += 7;
+if(foo != bar)
+  foo = 2;
 
 console.log(foo);
