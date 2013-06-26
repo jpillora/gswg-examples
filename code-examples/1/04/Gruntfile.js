@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         curly: true,
         eqeqeq: true
       },
-      src: ['Gruntfile.js', 'src/**/*.js']
+      target1: ['Gruntfile.js', 'src/**/*.js']
     }
   });
 

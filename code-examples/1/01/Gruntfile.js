@@ -6,7 +6,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     uglify: {
-      build: {
+      target1: {
         src: 'foo.js',
         dest: 'foo.min.js'
       }
