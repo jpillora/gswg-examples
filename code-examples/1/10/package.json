@@ -2,9 +2,6 @@
   "name": "getting-started-with-gruntjs-sftp",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "~0.4.1"
-  },
-  "dependencies": {
     "grunt": "~0.4.1",
     "grunt-ssh": "~0.6.0"
   }
