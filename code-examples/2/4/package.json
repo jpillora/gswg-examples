@@ -6,16 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "getting",
-    "started",
-    "with",
-    "gruntjs",
-    "chapter",
-    "2",
-    "example",
-    "4"
-  ],
   "author": "Jaime Pillora <dev@jpillora.com>",
   "license": "MIT",
   "devDependencies": {

@@ -1,12 +1,18 @@
 module.exports = function(grunt) {
 
-  grunt.registerTask("foo", function() {
-    grunt.log.write("test");
-  });
+  // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
+  // Project configuration.
   grunt.initConfig({
-    foo: 42
+    uglify: {
+      target1: {
+        src: 'src/foo.js',
+        dest: 'build/foo.min.js'
+      }
+    }
   });
 
-  grunt.registerTask("default", ["foo"]);
+  // Define the default task
+  grunt.registerTask('default', ['uglify']);
 };
