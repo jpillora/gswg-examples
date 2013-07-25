@@ -5,11 +5,11 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    consoleCheck: {
-      file: './build/app.js'
+   httpPost: {
+      url: 'http://echo.jpillora.com/clear-cache'
     }
   });
 
   // Define the default task
-  grunt.registerTask('default', ['consoleCheck']);
+  grunt.registerTask('default', ['httpPost']);
 };
