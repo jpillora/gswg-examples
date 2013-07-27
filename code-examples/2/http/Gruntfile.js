@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-   httpPost: {
+    httpPost: {
       url: 'http://echo.jpillora.com/clear-cache'
     }
   });

@@ -5,11 +5,12 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    consoleCheck: {
-      file: './build/app.js'
+    stringCheck: {
+      file: './src/app.js',
+      string: 'console.log('
     }
   });
 
   // Define the default task
-  grunt.registerTask('default', ['consoleCheck']);
+  grunt.registerTask('default', ['stringCheck']);
 };
