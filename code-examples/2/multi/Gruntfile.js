@@ -5,53 +5,16 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    options: {
-      pow: '#'
-    },
     myMultiTask: {
-      options: {
-        foo: 42,
-        bar: 7,
-        ping: {
-          pong: 1,
-          zap: '!'
-        }
-      },
       target1: {
-        options: {
-          foo: 21,
-          ping: {
-            zap: '!!!!'
-          }
+        files: {
+          'dest/a.js': 'tasks/*.js',
+          'dest/a1.js': ['src/aa1.js', 'src/aaa1.js']
         }
-      },
-      target2: {
-        files: [
-          {
-            src: 'tasks/*.*',
-            dest: 'out.txt'
-          },
-          {
-            src: 'node_modules/*',
-            dest: 'out2.txt'
-          }
-
-        ]
-      }
-    },
-    myTask: {
-
-      options: {
-        bar: 2
-      },
-
-      foo: 42,
-      files: {
-        'out.txt': 'node_modules/*'
       }
     }
   });
 
   // Define the default task
-  grunt.registerTask('default', ['myTask']);
+  grunt.registerTask('default', ['myMultiTask']);
 };
