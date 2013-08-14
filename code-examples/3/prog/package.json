@@ -1,0 +1,14 @@
+{
+  "name": "getting-started-with-gruntjs-ch3-eg...",
+  "version": "0.1.0",
+  "description": "Getting Started with GruntJS - Chapter 3, ..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaime Pillora <dev@jpillora.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  }
+}
