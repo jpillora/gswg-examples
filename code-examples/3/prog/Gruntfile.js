@@ -4,6 +4,7 @@ module.exports = function(grunt) {
     console.log(0);
     grunt.task.run("bar");
     grunt.task.run("bazz");
+    grunt.task.run("bang");
   });
 
   grunt.registerTask("bar", function() {
@@ -22,6 +23,11 @@ module.exports = function(grunt) {
   grunt.registerTask("pong", function() {
     console.log(4);
   });
+
+  grunt.registerTask("bang", function() {
+    console.log(5);
+  });
+
 
   // Define the default task
   grunt.registerTask('default', ['foo']);

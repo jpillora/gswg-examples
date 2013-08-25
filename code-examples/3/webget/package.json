@@ -4,6 +4,7 @@
   "repository": "https://github.com/jpillora/getting-started-with-gruntjs.git",
   "author": "Jaime Pillora <dev@jpillora.com>",
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "request": "~2.27.0"
   }
 }
