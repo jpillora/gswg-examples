@@ -1,13 +1,8 @@
 {
-  "name": "getting-started-with-gruntjs-ch2-eg...",
+  "name": "gswgjs-2-09-templates-array",
   "version": "0.1.0",
-  "description": "Getting Started with GruntJS - Chapter 2, ..",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "repository": "https://github.com/jpillora/getting-started-with-gruntjs.git",
   "author": "Jaime Pillora <dev@jpillora.com>",
-  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.1"
   }

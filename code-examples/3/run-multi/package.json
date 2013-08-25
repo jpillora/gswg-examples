@@ -1,13 +1,8 @@
 {
-  "name": "getting-started-with-gruntjs-ch3-eg1",
+  "name": "gswgjs-3-run-multi",
   "version": "0.1.0",
-  "description": "Getting Started with GruntJS - Chapter 3, Example 1",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "repository": "https://github.com/jpillora/getting-started-with-gruntjs.git",
   "author": "Jaime Pillora <dev@jpillora.com>",
-  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.1"
   }

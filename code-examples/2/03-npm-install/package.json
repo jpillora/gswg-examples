@@ -1,5 +1,9 @@
 {
-  "dependencies": {
+  "name": "gswgjs-2-03-npm-install",
+  "version": null,
+  "repository": "https://github.com/jpillora/getting-started-with-gruntjs.git",
+  "author": "Jaime Pillora <dev@jpillora.com>",
+  "devDependencies": {
     "grunt": "0.4.1"
   }
 }

@@ -1,6 +1,8 @@
 {
-  "name": "",
+  "name": "gswgjs-1-01-minify",
   "version": "0.1.0",
+  "repository": "https://github.com/jpillora/getting-started-with-gruntjs.git",
+  "author": "Jaime Pillora <dev@jpillora.com>",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.2"

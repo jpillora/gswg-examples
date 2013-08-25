@@ -1,6 +1,8 @@
 {
-  "name": "getting-started-with-gruntjs-sftp",
+  "name": "gswgjs-1-10-ssh",
   "version": "0.1.0",
+  "repository": "https://github.com/jpillora/getting-started-with-gruntjs.git",
+  "author": "Jaime Pillora <dev@jpillora.com>",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-ssh": "~0.6.0"
