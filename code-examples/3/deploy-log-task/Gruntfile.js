@@ -1,8 +1,8 @@
-var fs = require("fs");
+var fs = require('fs');
 
 module.exports = function(grunt) {
 
-  grunt.registerTask("log-deploy", function() {
+  grunt.registerTask('log-deploy', function() {
     
 
 

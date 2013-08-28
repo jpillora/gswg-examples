@@ -3,7 +3,7 @@ var url = 'https://raw.github.com/jpillora/getting-started-with-gruntjs/master/R
 
 module.exports = function(grunt) {
 
-  grunt.registerTask("webget", function() {
+  grunt.registerTask('webget', function() {
     
     var done = this.async();
     
