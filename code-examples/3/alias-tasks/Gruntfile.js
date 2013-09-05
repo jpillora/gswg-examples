@@ -1,15 +1,15 @@
 module.exports = function(grunt) {
 
   grunt.registerTask('build', function() {
-    grunt.log.writeln('building...');
+    console.log('building...');
   });
 
   grunt.registerTask('test', function() {
-    grunt.log.writeln('testing...');
+    console.log('testing...');
   });
 
   grunt.registerTask('upload', function() {
-    grunt.log.writeln('uploading...');
+    console.log('uploading...');
   });
 
   grunt.registerTask('deploy', ['build', 'test', 'upload']);

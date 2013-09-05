@@ -1,8 +1,6 @@
 module.exports = function(grunt) {
-
-  grunt.registerTask('default', function() {
-
-    grunt.log.writeln(grunt.option('test'));
+  console.log('bar is: ' + grunt.option('bar'));
+  grunt.registerTask('foo', function() {
+    //nothing here...
   });
-
 };

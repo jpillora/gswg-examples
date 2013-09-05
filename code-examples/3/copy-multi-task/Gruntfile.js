@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     this.files.forEach(function(file) {
       grunt.file.copy(file.src, file.dest);
     });
-    grunt.log.writeln('Copied ' + this.files.length + ' files');
+    console.log('Copied ' + this.files.length + ' files');
   });
 
 };

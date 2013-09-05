@@ -6,6 +6,6 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', function() {
-    grunt.log.writeln( grunt.config('baz') );
+    console.log( grunt.config('baz') );
   });
 };
