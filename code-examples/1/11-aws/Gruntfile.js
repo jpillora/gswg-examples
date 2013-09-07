@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  // Load the plugin that provides the "aws" task.
+  // Load the plugin that provides the "s3" task.
   grunt.loadNpmTasks('grunt-aws');
 
   // Project configuration.
@@ -10,15 +10,16 @@ module.exports = function(grunt) {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
         secretAccessKey: "<%= aws.secretAccessKey %>",
-        bucket: "jpillora-usa"
+        bucket: ""
       },
+      //upload all files within build/ to output/
       build: {
         cwd: "build/",
-        src: "**"
+        src: "**",
       }
     }
   });
 
   // Define the default task
-  grunt.registerTask('default', ['aws']);
+  grunt.registerTask('default', ['s3']);
 };

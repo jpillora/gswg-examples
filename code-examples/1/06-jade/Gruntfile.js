@@ -8,17 +8,9 @@ module.exports = function(grunt) {
     jade: {
       target1: {
         files: {
-          "build/foo.html": "src/foo.jade"
+          "build/foo.html": "src/foo.jade",
+          "build/bar.html": "src/bar.jade"
         } 
-      },
-      target2: {
-        files: {
-          "build/bazz.html": [
-            "src/foo.jade",
-            "src/bar.jade",
-            "src/extra/*.jade"
-          ]
-        }
       }
     }
   });
