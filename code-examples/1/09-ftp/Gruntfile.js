@@ -10,10 +10,10 @@ module.exports = function(grunt) {
         auth: {
           host: 'localhost',
           port: 21,
-          authKey: 'key1'
+          authKey: 'my-key'
         },
-        src: 'src',
-        dest: '/src'
+        src: 'build',
+        dest: 'build'
       }
     }
   });

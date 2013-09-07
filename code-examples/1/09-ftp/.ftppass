@@ -1,6 +1,6 @@
 {
-  "key1": {
-    "username": "<enter your username>",
-    "password": "<enter your password>"
+  "my-key": {
+    "username": "john",
+    "password": "smith"
   }
 }

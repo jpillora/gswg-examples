@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
         secretAccessKey: "<%= aws.secretAccessKey %>",
-        bucket: ""
+        bucket: "jpillora-usa"
       },
       //upload all files within build/ to output/
       build: {
