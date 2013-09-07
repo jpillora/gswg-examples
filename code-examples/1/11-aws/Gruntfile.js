@@ -5,22 +5,16 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    aws: {
+    aws: grunt.file.readJSON("credentials.json"),
+    s3: {
       options: {
-        config:{
-          accessKeyId: '...',
-          secretAccessKey: '...'
-        },
-        s3: {
-          options: {
-            bucket: '...',
-            access: 'public-read'
-          }
-        }
+        accessKeyId: "<%= aws.accessKeyId %>",
+        secretAccessKey: "<%= aws.secretAccessKey %>",
+        bucket: "jpillora-usa"
       },
-      deploy: {
-        service: 's3',
-        put: ['src/**']
+      build: {
+        cwd: "build/",
+        src: "**"
       }
     }
   });
