@@ -6,16 +6,14 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     sftp: {
+      options: {
+        host: '172.16.59.129',
+        username: 'jamo',
+        path: '/tmp/',
+        srcBasePath: 'build/'
+      },
       target1: {
-        files: {
-          "src/": "src/**"
-        },
-        options: {
-          path: '~/',
-          host: 'localhost',
-          username: '...',
-          password: '...'
-        }
+        src: 'build/*.html'
       }
     }
   });
