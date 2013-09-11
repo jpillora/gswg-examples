@@ -18,12 +18,10 @@ module.exports = function(grunt) {
   });
 
   grunt.registerMultiTask('copy', function() {
-    
     this.files.forEach(function(file) {
       grunt.file.copy(file.src, file.dest);
     });
-
-    grunt.log.writeln('Copied ' + this.files.length + ' files');
+    console.log('Copied ' + this.files.length + ' files');
   });
 
 };

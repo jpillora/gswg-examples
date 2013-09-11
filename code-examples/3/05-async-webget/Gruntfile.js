@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       if(err) {
         done(err);
       } else if(res.status !== 200) {
-        done(new Error("Not OK"));
+        done(new Error('Not OK'));
       } else {
         grunt.file.write('FILE.md', contents);
         done();
