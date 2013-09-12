@@ -5,10 +5,10 @@ var url = 'https://raw.github.com/jpillora/'+
 module.exports = function(grunt) {
   grunt.registerTask('webget', function() {
     var done = this.async();
-    request(url, function(err, res, contents) {
+    request(url, function(err, response, contents) {
       if(err) {
         done(err);
-      } else if(res.status !== 200) {
+      } else if(response.status !== 200) {
         done(new Error('Not OK'));
       } else {
         grunt.file.write('FILE.md', contents);
