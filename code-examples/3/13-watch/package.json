@@ -1,0 +1,11 @@
+{
+  "name": "gswgjs-3-prog",
+  "version": "0.1.0",
+  "repository": "https://github.com/jpillora/getting-started-with-gruntjs.git",
+  "author": "Jaime Pillora <dev@jpillora.com>",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}

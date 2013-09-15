@@ -1,7 +1,7 @@
 var fs = require('fs'), path = require('path');
 
 //chapters
-var chs = fs.readdirSync('.');
+var chs = fs.readdirSync(__dirname);
 chs.forEach(function(ch) {
 
   if(!/^\d$/.test(ch)) return;
