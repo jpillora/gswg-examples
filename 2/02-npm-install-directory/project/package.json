@@ -1,4 +1,7 @@
 {
-   "name": "npm-install-example",
-   "version": "0.1.0"
+  "name": "gswg-2-02-npm-install-directory",
+  "version": "0.1.0",
+  "repository": "https://github.com/jpillora/gswg-examples.git",
+  "author": "Jaime Pillora <gswg@jpillora.com>",
+  "license": "MIT"
 }

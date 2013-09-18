@@ -1,10 +1,11 @@
 {
-  "name": "gswgjs-1-04-linting",
+  "name": "gswg-1-04-linting",
   "version": "0.1.0",
-  "repository": "https://github.com/jpillora/getting-started-with-gruntjs.git",
-  "author": "Jaime Pillora <dev@jpillora.com>",
+  "repository": "https://github.com/jpillora/gswg-examples.git",
+  "author": "Jaime Pillora <gswg@jpillora.com>",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.0"
-  }
+  },
+  "license": "MIT"
 }

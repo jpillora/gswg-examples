@@ -27,20 +27,25 @@ module.exports = function (grunt) {
 
         var pkg = JSON.parse( fs.readFileSync(pkgPath).toString() );
 
+        //key positions
         var newpkg = {
           name: null,
-          version: "0.1.0",
-          repository: "https://github.com/jpillora/gswg-examples.git",
-          author: "Jaime Pillora <dev@jpillora.com>"
+          version: null,
+          repository: null,
+          author: null
         };
 
         for(var key in pkg)
           newpkg[key] = pkg[key];
 
+        //overrides
         newpkg.name = "gswg-"+ch+"-"+eg;
+        newpkg.version = "0.1.0";
+        newpkg.repository = "https://github.com/jpillora/gswg-examples.git";
+        newpkg.author = "Jaime Pillora <gswg@jpillora.com>";
+        newpkg.license = "MIT";
         delete newpkg.scripts;
         delete newpkg.description;
-        delete newpkg.license;
         delete newpkg.main;
 
         if(newpkg.dependencies)
@@ -52,23 +57,19 @@ module.exports = function (grunt) {
   });
 
   grunt.initConfig({
-    "jshint": {
-      "options": {
-        "browser": true,
-        "curly": true,
-        "eqeqeq": true,
-        "node": true,
-        "globals": {
-          "grunt": true
-        }
+    jshint: {
+      options: {
+        browser: true,
+        eqeqeq: true,
+        node: true
       },
-      "target1": [
+      all: [
         'Gruntfile.js',
         '**/*.{js,json}',
         // Excludes
         "!**/node_modules/**",
         "!**/*.min.js",
-        "!**/1/04-linting/**"
+        "!1/04-linting/src/foo.js"
       ]
     }
   });
