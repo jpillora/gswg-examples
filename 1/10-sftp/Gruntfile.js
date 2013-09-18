@@ -5,10 +5,14 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+    
+    credentials: grunt.file.readJSON('credentials.json'),
+
     sftp: {
       options: {
         host: '172.16.59.129',
-        username: 'jamo',
+        username: '<%= credentials.username %>',
+        password: '<%= credentials.password %>',
         path: '/tmp/',
         srcBasePath: 'build/'
       },

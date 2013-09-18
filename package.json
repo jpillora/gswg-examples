@@ -4,12 +4,7 @@
   "author": "Jaime Pillora <dev@jpillora.com> (http://jpillora.com)",
   "description": "Getting Started with Grunt - Code Examples",
   "private": true,
-  "licenses": [
-    {
-      "type" : "GPL",
-      "url" : "https://github.com/jpillora/gswg-examples/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "scripts": {
     "start": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
