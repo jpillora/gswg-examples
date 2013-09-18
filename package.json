@@ -1,0 +1,28 @@
+{
+  "name": "gswg-examples",
+  "version": "0.0.1",
+  "author": "Jaime Pillora <dev@jpillora.com> (http://jpillora.com)",
+  "description": "Getting Started with Grunt - Code Examples",
+  "private": true,
+  "licenses": [
+    {
+      "type" : "GPL",
+      "url" : "https://github.com/jpillora/gswg-examples/blob/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "start": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jpillora/gswg-examples.git"
+  },
+  "bugs": "https://github.com/jpillora/gswg-examples/issues",
+  "homepage": "http://gswg.io/",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "load-grunt-tasks": "~0.1.0"
+  }
+}
