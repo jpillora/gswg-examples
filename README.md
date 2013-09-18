@@ -6,10 +6,10 @@
 * Install Grunt CLI with `npm install -g grunt-cli`
 * Get the examples
   * Clone the repository with `git clone https://github.com/jpillora/gswg-examples.git` OR
-  * [Download zip](https://github.com/jpillora/gswg-examples/archive/master.zip)
+  * [Download the zip](https://github.com/jpillora/gswg-examples/archive/master.zip)
 * Find an example with `cd gswg-examples/<chapter>/<example>`
-* Install example dependancies with `npm install`
-* Run example with `grunt` or as directed
+* Install example dependencies with `npm install`
+* Run example with `grunt` or as directed by the book
 
 #### MIT License
 

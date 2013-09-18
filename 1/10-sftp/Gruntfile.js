@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         srcBasePath: 'build/'
       },
       target1: {
-        src: 'build/*.html'
+        src: 'build/{foo,bar,bazz}.html'
       }
     }
   });
