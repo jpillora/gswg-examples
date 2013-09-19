@@ -1,10 +1,5 @@
 {
-  "name": "gswg-2-03-npm-install",
-  "version": "0.1.0",
-  "repository": "https://github.com/jpillora/gswg-examples.git",
-  "author": "Jaime Pillora <gswg@jpillora.com>",
-  "devDependencies": {
+  "dependencies": {
     "grunt": "0.4.1"
-  },
-  "license": "MIT"
+  }
 }

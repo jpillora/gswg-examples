@@ -1,6 +1,6 @@
 var request = require('request');
 var url = 'https://raw.github.com/jpillora/'+
-          'getting-started-with-grun2tjs/master/README.md';
+          'gswg-examples/master/README.md';
 
 module.exports = function(grunt) {
   grunt.registerTask('webget', function() {
@@ -8,10 +8,11 @@ module.exports = function(grunt) {
     request(url, function(err, response, contents) {
       if(err) {
         done(err);
-      } else if(response.status !== 200) {
+      } else if(response.statusCode !== 200) {
         done(new Error('Not OK'));
       } else {
         grunt.file.write('FILE.md', contents);
+        grunt.log.ok('FILE.md successfully created');
         done();
       }
     });
