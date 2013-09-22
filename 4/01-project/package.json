@@ -1,0 +1,10 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "description": "A static website",
+  "author": "Jaime Pillora <dev@jpillora.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  }
+}
