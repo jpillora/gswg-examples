@@ -7,6 +7,7 @@ module.exports = function(grunt) {
 
   // Project configuration
   grunt.initConfig({
+    //compilation
     coffee: {
       build: {
         options: {
@@ -22,6 +23,9 @@ module.exports = function(grunt) {
     },
     stylus: {
       build: {
+        options: {
+          compress: false
+        },
         src: "src/styles/app.styl",
         dest: "build/css/app.css"
       }
@@ -34,7 +38,11 @@ module.exports = function(grunt) {
         src: "src/views/app.jade",
         dest: "build/app.html"
       }
-    }
+    },
+    //optimization
+    uglify: {},
+    cssmin: {},
+    htmlmin: {}
   });
 
   // Define the default task

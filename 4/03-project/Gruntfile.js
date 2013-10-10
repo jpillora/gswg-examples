@@ -22,6 +22,9 @@ module.exports = function(grunt) {
     },
     stylus: {
       build: {
+        options: {
+          compress: false
+        },
         src: "src/styles/app.styl",
         dest: "build/css/app.css"
       }
