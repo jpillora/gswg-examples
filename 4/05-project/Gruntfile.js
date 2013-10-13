@@ -71,6 +71,17 @@ module.exports = function(grunt) {
     }
   });
 
+  //production specifc tasks
+  if(grunt.option('env') === 'prod') {
+    grunt.registerTask('scripts', ['coffee', 'uglify']);
+    grunt.registerTask('styles',  ['stylus', 'cssmin']);
+    grunt.registerTask('views',   ['jade',   'htmlmin']);
+  } else {
+    grunt.registerTask('scripts', ['coffee']);
+    grunt.registerTask('styles',  ['stylus']);
+    grunt.registerTask('views',   ['jade']);
+  }
+
   // Define the default task
   grunt.registerTask('default', ['coffee','stylus','jade']);
 };
