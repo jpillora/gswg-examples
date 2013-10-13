@@ -4,6 +4,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-coffee");
   grunt.loadNpmTasks("grunt-contrib-stylus");
   grunt.loadNpmTasks("grunt-contrib-jade");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-contrib-cssmin");
+  grunt.loadNpmTasks("grunt-contrib-htmlmin");
 
   // Project configuration
   grunt.initConfig({
@@ -40,9 +43,32 @@ module.exports = function(grunt) {
       }
     },
     //optimization
-    uglify: {},
-    cssmin: {},
-    htmlmin: {}
+    uglify: {
+      compress: {
+        src: "<%= coffee.build.dest %>",
+        dest: "<%= coffee.build.dest %>"
+      }
+    },
+    cssmin: {
+      compress: {
+        src: "<%= stylus.build.dest %>",
+        dest: "<%= stylus.build.dest %>"
+      }
+    },
+    htmlmin: {
+      options: {
+        removeComments: true,
+        collapseWhitespace: true,
+        collapseBooleanAttributes: true,
+        removeAttributeQuotes: true,
+        removeRedundantAttributes: true,
+        removeOptionalTags: true
+      },
+      compress: {
+        src: "<%= jade.build.dest %>",
+        dest: "<%= jade.build.dest %>"
+      }
+    }
   });
 
   // Define the default task
