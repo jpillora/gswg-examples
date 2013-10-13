@@ -1,0 +1,1 @@
+(function(){var a,b;a=function(a,b){return a+b},b=function(a,b){return a-b},alert(a(7,b(4,1)))}).call(this);
