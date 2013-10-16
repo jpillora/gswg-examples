@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 
+  // Initialize environment
+  var env = grunt.option('env') || 'dev';
+
   // Load tasks provided by each plugin
   grunt.loadNpmTasks("grunt-contrib-coffee");
   grunt.loadNpmTasks("grunt-contrib-stylus");
@@ -10,7 +13,7 @@ module.exports = function(grunt) {
 
   // Project configuration
   grunt.initConfig({
-    //compilation
+    // Compilation
     coffee: {
       build: {
         options: {
@@ -42,7 +45,7 @@ module.exports = function(grunt) {
         dest: "build/app.html"
       }
     },
-    //optimization
+    // Optimization
     uglify: {
       compress: {
         src: "<%= coffee.build.dest %>",
@@ -71,8 +74,8 @@ module.exports = function(grunt) {
     }
   });
 
-  //production specifc tasks
-  if(grunt.option('env') === 'prod') {
+  // Environment specifc tasks
+  if(env === 'prod') {
     grunt.registerTask('scripts', ['coffee', 'uglify']);
     grunt.registerTask('styles',  ['stylus', 'cssmin']);
     grunt.registerTask('views',   ['jade',   'htmlmin']);
@@ -83,5 +86,5 @@ module.exports = function(grunt) {
   }
 
   // Define the default task
-  grunt.registerTask('default', ['coffee','stylus','jade']);
+  grunt.registerTask('default', ['scripts','styles','views']);
 };

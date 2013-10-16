@@ -1,1 +1,14 @@
-(function(){var a,b;a=function(a,b){return a+b},b=function(a,b){return a-b},alert(a(7,b(4,1)))}).call(this);
+(function() {
+  var add, subtract;
+
+  add = function(a, b) {
+    return a + b;
+  };
+
+  subtract = function(a, b) {
+    return a - b;
+  };
+
+  alert(add(7, subtract(4, 1)));
+
+}).call(this);

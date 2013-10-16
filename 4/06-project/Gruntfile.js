@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 
+  // Initialize environment
+  var env = grunt.option('env') || 'dev';
+
   // Load tasks provided by each plugin
   grunt.loadNpmTasks("grunt-contrib-coffee");
   grunt.loadNpmTasks("grunt-contrib-stylus");
@@ -7,6 +10,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-htmlmin");
+  grunt.loadNpmTasks("grunt-contrib-watch");
 
   // Project configuration
   grunt.initConfig({
@@ -68,9 +72,36 @@ module.exports = function(grunt) {
         src: "<%= jade.build.dest %>",
         dest: "<%= jade.build.dest %>"
       }
+    },
+    // Watching
+    watch: {
+      scripts: {
+        files: "src/scripts/**/*.coffee",
+        tasks: "scripts"
+      },
+      styles: {
+        files: "src/styles/**/*.styl",
+        tasks: "styles"
+      },
+      views: {
+        files: "src/views/**/*.jade",
+        tasks: "views"
+      }
     }
   });
 
+  // Environment specifc tasks
+  if(env === 'prod') {
+    grunt.registerTask('scripts', ['coffee', 'uglify']);
+    grunt.registerTask('styles',  ['stylus', 'cssmin']);
+    grunt.registerTask('views',   ['jade',   'htmlmin']);
+  } else {
+    grunt.registerTask('scripts', ['coffee']);
+    grunt.registerTask('styles',  ['stylus']);
+    grunt.registerTask('views',   ['jade']);
+  }
+
+  grunt.registerTask('build', ['scripts','styles','views']);
   // Define the default task
-  grunt.registerTask('default', ['coffee','stylus','jade']);
+  grunt.registerTask('default', ['build','watch']);
 };
