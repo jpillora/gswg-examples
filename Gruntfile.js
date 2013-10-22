@@ -1,8 +1,9 @@
+// This Gruntfile performs static analysis
+// on all of the examples.
+// A Gruntfile for the Gruntfiles!
+
 var fs = require('fs'), path = require('path');
 
-// this Gruntfile performs static analysis
-// on all of the examples to help catch
-// bugs and normalize style  
 module.exports = function (grunt) {
 
   require("load-grunt-tasks")(grunt);
