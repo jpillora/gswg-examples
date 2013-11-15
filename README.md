@@ -1,4 +1,4 @@
-## Code examples for *Getting Started with Grunt*
+## Code examples for [*Getting Started with Grunt*](http://gswg.io)
 
 ### Prerequisites
 
