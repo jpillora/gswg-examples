@@ -49,6 +49,7 @@ module.exports = function (grunt) {
         delete newpkg.description;
         delete newpkg.main;
 
+        //should be devDependencies
         if(newpkg.dependencies)
           console.log('WARNING: ' + pkgPath + ' has "dependencies"');
 
@@ -60,7 +61,6 @@ module.exports = function (grunt) {
   grunt.initConfig({
     jshint: {
       options: {
-        browser: true,
         eqeqeq: true,
         node: true
       },

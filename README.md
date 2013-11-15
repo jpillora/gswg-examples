@@ -1,15 +1,32 @@
-## *Getting Started with Grunt - Code Examples*
+## Code examples for *Getting Started with Grunt*
+
+### Prerequisites
+
+*The instructions for these 2 steps are covered in great detail in* ***Chapter 2 Setting up Grunt***
+
+1. Install [Node.js](http://nodejs.org/download/)
+2. Install Grunt CLI with `npm install -g grunt-cli`
+
+### Download
+
+* Clone this repository with `git clone https://github.com/jpillora/gswg-examples.git` on the command-line (*git* is required)
+
+      OR
+
+* [Download the zip](https://github.com/jpillora/gswg-examples/archive/master.zip)
 
 ### Usage
 
-* Install [Node.js](http://nodejs.org/download/)
-* Install Grunt CLI with `npm install -g grunt-cli`
-* Get the examples
-  * Clone the repository with `git clone https://github.com/jpillora/gswg-examples.git` OR
-  * [Download the zip](https://github.com/jpillora/gswg-examples/archive/master.zip)
-* Find an example with `cd gswg-examples/<chapter>/<example>`
-* Install example dependencies with `npm install`
-* Run example with `grunt` or as directed by the book
+This repository `gswg-examples` has one folder per chapter. Within each chapter folder,
+there are numbered examples which are referenced from the book.
+
+*In some examples, before you can run the build with `grunt`, you'll first need to
+download the project dependencies with `npm install`.*
+
+### Issues
+
+If you're having problems running any of examples or if you find a bug in any
+of the examples, please open an Issue here https://github.com/jpillora/gswg-examples/issues.
 
 #### MIT License
 
