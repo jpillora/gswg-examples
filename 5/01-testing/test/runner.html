@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/mocha.css"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <!--
+      Load/Setup Mocha and Chai
+      *Important* grunt-mocha requires an older version
+      of mocha.js, please use the mocha.js in this example
+      instead of the current version in the mocha repository.
+    -->
+    <div id="mocha"></div>
+    <script src="lib/mocha.js"></script>
+    <script src="lib/chai.js"></script>
+    <script>
+      var expect = chai.expect; 
+      mocha.setup('bdd');
+    </script>
+
+    <!-- Test files -->
+    <script src="array-tests.js"></script>
+
+    <script>
+      // Run now if in the browser
+      if (navigator.userAgent.indexOf('PhantomJS') === -1)
+        mocha.run();
+    </script>
+  </body>
+</html>

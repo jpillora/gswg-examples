@@ -1,18 +1,18 @@
-
-
 module.exports = function(grunt) {
 
-  //test
+  grunt.loadNpmTasks("grunt-mocha");
+
+  //Point the 'mocha' task to our test runner
   grunt.initConfig({
     mocha: {
-      myFirstTest: {
-        src: 'test/my-first-test.html'
+      test: {
+        options: {
+          run: true
+        },
+        src: "test/runner.html"
       }
     }
   });
 
-
-
-
-
+  grunt.registerTask("default", ["mocha"]);
 };
