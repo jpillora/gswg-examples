@@ -7,7 +7,7 @@
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started with Grunt Book](http://gswg.io/) or the [Getting Started Guide](http://gruntjs.com/getting-started), it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-gswg --save-dev
+npm install --save-dev grunt-gswg
 ```
 
 Once the plugin has been installed, it can be loaded inside your Gruntfile with this line of JavaScript:
@@ -21,14 +21,6 @@ grunt.loadNpmTasks('grunt-gswg');
 *Run this task with the `grunt gswg` command.*
 
 Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
-
-### Options
-
-#### name
-Type: `String`
-Default: `"Jaime"`
-
-This name will be displayed when this task is run.
 
 ## Release History
 
