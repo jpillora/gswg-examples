@@ -1,8 +1,8 @@
 {
-  "name": "gswg-4-03-project",
+  "name": "gswg-4-05-project",
   "version": "0.1.0",
-  "description": "A static website",
-  "author": "Jaime Pillora <dev@jpillora.com>",
+  "repository": "https://github.com/jpillora/gswg-examples.git",
+  "author": "Jaime Pillora <gswg@jpillora.com>",
   "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.1",

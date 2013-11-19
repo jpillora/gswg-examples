@@ -1,0 +1,13 @@
+{
+  "name": "grunt-gswg",
+  "version": "0.1.0",
+  "author": "Jaime Pillora <gswg@jpillora.com>",
+  "homepage": "https://github.com/jpillora/gswg-examples/tree/master/5/04-sample-plugin",
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "license": "MIT"
+}

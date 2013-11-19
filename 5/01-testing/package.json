@@ -1,6 +1,11 @@
 {
+  "name": "gswg-5-01-testing",
+  "version": "0.1.0",
+  "repository": "https://github.com/jpillora/gswg-examples.git",
+  "author": "Jaime Pillora <gswg@jpillora.com>",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-mocha": "~0.4.1"
-  }
+  },
+  "license": "MIT"
 }

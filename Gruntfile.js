@@ -3,6 +3,7 @@
 // A Gruntfile for the Gruntfiles!
 
 var fs = require('fs'), path = require('path');
+var ignoredEgs = /(04-sample-plugin|03-npm-install)/;
 
 module.exports = function (grunt) {
 
@@ -20,6 +21,8 @@ module.exports = function (grunt) {
       //examples
       var egs = fs.readdirSync(ch);
       egs.forEach(function(eg) {
+
+        if(ignoredEgs.test(eg)) return;
 
         var pkgPath = path.join(ch, eg, 'package.json');
 
@@ -69,6 +72,7 @@ module.exports = function (grunt) {
         '**/*.{js,json}',
         // Excludes
         "!**/node_modules/**",
+        "!**/test/lib/**",
         "!**/*.min.js",
         "!1/04-linting/src/foo.js"
       ]

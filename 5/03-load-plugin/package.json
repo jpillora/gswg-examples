@@ -1,10 +1,11 @@
 {
-  "name": "gswg-5-02-external-tasks",
+  "name": "gswg-5-03-load-plugin",
   "version": "0.1.0",
   "repository": "https://github.com/jpillora/gswg-examples.git",
   "author": "Jaime Pillora <gswg@jpillora.com>",
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1"
   },
   "license": "MIT"
 }
